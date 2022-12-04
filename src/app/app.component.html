@@ -1,7 +1,12 @@
 <div class="center">
-	<input type="text" id="username" class="password" placeholder="Password" autocomplete="off"/>
+	<h2 class="hi">Hi Chubby :)</h2>
+	<input type="text" id="code" #code class="password" placeholder="code: mmddyyyy" autocomplete="off"/>
 	<br>
 	<br>
-	<button (click)="hideButton()" class="buttonGo forTimeline" role="button">GO</button>
+	<button (click)="buttonGo(code.value)" class="buttonGo forTimeline" role="button">GO</button>
 
+</div>
+
+<div class="footer">
+	<p>created by Jake</p>
 </div>

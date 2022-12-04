@@ -1,32 +1,35 @@
 .center {
 	margin: auto;
 	width: 98%;
-	// border: 3px solid #73AD21;
-	// padding: 10px;
 	text-align: center;
-//   border: 3px solid green;
 	position: absolute;
-	top: 50%;
-
+	top: 30%;
+	-webkit-transform: scaleY(0);
+			transform: scaleY(0);
+	-webkit-transform-origin: center;
+			transform-origin: center;
   }
 
+  .hi {
+	font-family: 'Helvetica';
+	color: #575555;;
+    font-size: 30px;
+    background-color: #FAFAFA;
+  }
   input:focus {
 	// border-color:cornflowerblue;
 	border:2px solid cornflowerblue;
 }
 .password{
-	// border-radius: 9999em;
 	margin: auto;
 	padding:15px 10px;
-	// width:20%;
-	// border-color:white
 	outline:none;
 	border:1px solid #bbb;
 	border-radius:20px;
-	// &:focus {
-	// 	border-color:linear-gradient(21deg, #10abff, #1beabd) !important;
-	// }
-
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: left;
+	transform-origin: left;
 }
 .forTimeline {
 	position: absolute;
@@ -57,6 +60,10 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
 }
 
 .buttonGo:before {
@@ -110,3 +117,17 @@
   top: 0;
   border-radius: 10px;
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(184, 184, 184);
+	color: white;
+	text-align: center;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: left;
+	transform-origin: left;
+ }
